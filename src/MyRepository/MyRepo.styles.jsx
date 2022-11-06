@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const WorksCardContent = styled.div`
+export const MyRepoCardContent = styled.div`
   margin-top: 1rem;
   display: grid;
   column-gap: 0.1rem;
@@ -14,7 +14,7 @@ export const WorksCardContent = styled.div`
   }
 `;
 
-export const WorksCard = styled.div`
+export const MyRepoCard = styled.div`
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -75,12 +75,12 @@ export const Button = styled.button`
   }
 `;
 
-export const WorksCardTitle = styled.h3`
+export const MyRepoCardTitle = styled.h3`
   font-weight: bold;
   padding-top: 1rem;
   box-sizing: border-box;
 `;
 
-export const WorksCardText = styled.p`
+export const MyRepoCardText = styled.p`
   box-sizing: border-box;
 `;

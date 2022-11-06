@@ -5,10 +5,10 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import {
-  WorksCardContent,
-  WorksCard,
-  WorksCardTitle,
-  WorksCardText,
+  MyRepoCardContent,
+  MyRepoCard,
+  MyRepoCardTitle,
+  MyRepoCardText,
   Button,
 } from "./MyRepo.styles";
 
@@ -39,23 +39,23 @@ function MyRepo() {
   console.log(repos)
   return (
     <div>
-            <WorksCardContent>
+            <MyRepoCardContent>
               {loading ? (
                 <h3>Loading...</h3>
               ) : (
                 repos &&
                 currentPost.map((rep) => (
-                  <WorksCard key={rep.id}>
-                    <WorksCardTitle>{rep.name}</WorksCardTitle>
-                    <WorksCardText>{rep.visibility}</WorksCardText>
-                    <WorksCardText>{rep.forks}</WorksCardText>
-                    <WorksCardText>{rep.created_at}</WorksCardText>
-                    <WorksCardText style={{fontSize: "8px"}}>{rep.contributors_url}</WorksCardText>
+                  <MyRepoCard key={rep.id}>
+                    <MyRepoCardTitle>{rep.name}</MyRepoCardTitle>
+                    <MyRepoCardText>{rep.visibility}</MyRepoCardText>
+                    <MyRepoCardText>{rep.forks}</MyRepoCardText>
+                    <MyRepoCardText>{rep.created_at}</MyRepoCardText>
+                    <MyRepoCardText style={{fontSize: "8px"}}>{rep.contributors_url}</MyRepoCardText>
                     <Link to={`/repo/${rep.id}`}>See More</Link>
-                  </WorksCard>
+                  </MyRepoCard>
                 ))
               )}
-          </WorksCardContent>
+          </MyRepoCardContent>
        <div style={{alignItems: "center", display: "flex", justifyContent: "center", padding:"20px"}}>
        <Button
           disabled={page <= 1 ? true : null}
