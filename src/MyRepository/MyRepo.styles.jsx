@@ -66,7 +66,8 @@ export const Button = styled.button`
   border-radius: ${({ bigRadius }) => (bigRadius ? "20px" : "8px")};
   background-color: ${({ primary }) => (primary ? "#43F3E3" : "#0b0e14")};
   color: ${({ primary }) => (primary ? "#0b0e14" : "#fff")};
-  padding: ${({ big }) => (big ? "18px 30px" : "10px 28px")};
+  padding: ${({ big }) => (big ? "10px 15px" : "5px 9px")};
+  margin: auto 3px;
   font-size: ${({ bigFont }) => (bigFont ? "20px" : "18px")};
   outline: none;
   cursor: pointer;
@@ -80,14 +81,14 @@ export const Button = styled.button`
   &:active {
     transform: translateY(0.5rem);
   }
-  @media only screen and (max-width: 1000px) {
+  /* @media only screen and (max-width: 1000px) { */
     /* width: 100%; */
-    padding: ${({ big }) => (big ? "18px 30px" : "10px 20px")};
-  }
-  @media only screen and (max-width: 375px) {
+    /* padding: ${({ big }) => (big ? "18px 30px" : "10px 20px")}; */
+  /* } */
+  /* @media only screen and (max-width: 375px) {
     padding: ${({ big }) => (big ? "12px 20px" : "10px 8px")};
     font-size: ${({ bigFont }) => (bigFont ? "16px" : "18px")};
-  }
+  } */
 `;
 
 export const MyRepoCardTitle = styled.h3`
