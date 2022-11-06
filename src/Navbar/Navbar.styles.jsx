@@ -66,7 +66,6 @@ text-align: center;
 @media only screen and (max-width:1000px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100vh;
     position: absolute;
     top: 80px;
@@ -120,7 +119,6 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     height: 120px;
 }
 `;

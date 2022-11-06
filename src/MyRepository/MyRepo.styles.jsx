@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const MyRepoCardContent = styled.div`
   margin-top: 1rem;
-  display: grid;
-  column-gap: 0.1rem;
-  row-gap: 1rem;
-  grid-template-columns: auto auto auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  
 
   @media only screen and (max-width: 375px) {
     display: flex;
@@ -15,27 +16,41 @@ export const MyRepoCardContent = styled.div`
 `;
 
 export const MyRepoCard = styled.div`
-  font-size: 12px;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 20rem;
-  height: 20rem;
+  padding-bottom: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: #fff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   transition: all 0.5s ease;
   &:not(:last-child) {
     margin-right: 5rem;
-    
+
     @media only screen and (max-width: 900px) {
-      margin-bottom: 10rem;
+      //margin-bottom: 10rem;
       margin-right: 0;
     }
     @media only screen and (max-width: 800px) {
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
-     
+    }
+    @media only screen and (max-width: 414px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 

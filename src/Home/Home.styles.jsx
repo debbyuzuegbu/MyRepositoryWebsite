@@ -36,6 +36,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 0 auto;
+text-align: center;
 @media only screen and (max-width:912px) {
     position: absolute;
     display:flex;
@@ -46,7 +47,6 @@ margin: 0 auto;
 @media only screen and (max-width:820px) {
     position: absolute;
     display:flex;
-    align-items: flex-start;
     justify-content: center;
     
 }
@@ -54,14 +54,12 @@ margin: 0 auto;
 @media only screen and (max-width:412px) {
     position: absolute;
     display:flex;
-    align-items: flex-start;
     justify-content: center;
     
 }
 @media only screen and (max-width:390px) {
     position: absolute;
     display:flex;
-    align-items: flex-start;
     justify-content: center;
     
 }

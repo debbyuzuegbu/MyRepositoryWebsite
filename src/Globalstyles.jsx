@@ -31,7 +31,7 @@ export default GlobalStyles;
 
 export const Container = styled.div`
 margin: 0 auto;
-padding: 0 50px;
+padding: 0 40px;
 max-width: 1300px;
 width: 100%;
 @media (max-width:400px){
@@ -68,7 +68,7 @@ transition: all .5s ease;
     transform: translateY(.5rem);
 }
 @media only screen and (max-width:1000px) {
-    /* width: 100%; */
+    width: 100%;
     padding: ${({big}) => big? '18px 30px' : '10px 20px'};
 }
 @media only screen and (max-width:375px) {
