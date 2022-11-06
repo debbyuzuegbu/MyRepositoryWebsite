@@ -48,7 +48,7 @@ function MyRepo() {
   console.log(repos)
   return (
     <div>
-            <div style={{marginTop:"1rem",display: "grid",columnGap: "0.1rem", rowGap: "1rem", gridTemplateColumns: "auto auto auto", padding:"2rem"}}>
+            <WorksCardContent>
               {loading ? (
                 <h3>Loading...</h3>
               ) : (
@@ -64,7 +64,7 @@ function MyRepo() {
                   </WorksCard>
                 ))
               )}
-          </div>
+          </WorksCardContent>
        <div>
        <button
           disabled={page <= 1 ? true : null}

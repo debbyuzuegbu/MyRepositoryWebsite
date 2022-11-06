@@ -9,7 +9,7 @@ font-size: 18px;
 position: sticky;
 top: 0;
 z-index: 999;
-background-color: #0c161c;
+background-color: #0b0e14;
 box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 display: flex;
 justify-content: center;
@@ -71,7 +71,7 @@ text-align: center;
     position: absolute;
     top: 80px;
     left: ${({click}) => click ? '0' : '-100%'};
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #0b0e14;
     transition: all .5s ease;
 }
 `;

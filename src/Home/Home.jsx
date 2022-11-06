@@ -20,7 +20,7 @@ const Home = () =>{
                    <HomeContentText>
                             <HomeTitleText>Github</HomeTitleText>
                             <HomeTitleText>View My Repository</HomeTitleText>
-                        <HomeSubTitle>Find Your repository by adding your github repositories to the search button</HomeSubTitle>
+                        <HomeTitleText style={{fontSize: "20px", justifyContent:"center"}}>Find Your repository by adding your github username to the search button below</HomeTitleText>
                         <HomeText >
                            <HomeBtn to="/repo">
                            <Button  primary big bigFont bigRadius>View My Repository</Button>

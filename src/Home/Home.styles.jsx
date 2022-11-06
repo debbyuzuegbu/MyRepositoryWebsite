@@ -30,24 +30,45 @@ color: #FFFEFE;
 `;
 
 export const HomeContentText = styled.div`
-width: 50%;
 padding: 5rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 0 auto;
-@media only screen and (max-width:600px) {
-    width: 80%;
-}
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:912px) {
     position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media only screen and (max-width:820px) {
+    position: absolute;
+    display:flex;
     align-items: flex-start;
+    justify-content: center;
+    
+}
+
+@media only screen and (max-width:412px) {
+    position: absolute;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+@media only screen and (max-width:390px) {
+    position: absolute;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    
 }
 `;
 
 export const HomeTitle = styled.h1`
-font-size: clamp(1rem, 10vw, 5rem);
+font-size: 20px;
 font-weight: 900;
 letter-spacing: 0.5rem;
 line-height: 1.0;
@@ -57,6 +78,7 @@ export const HomeTitleText = styled.span`
 display: block;
 margin: 0;
 font-size: clamp(1rem, 10vw, 3rem);
+
 `;
 
 export const HomeSubTitle = styled.h2`
@@ -65,8 +87,13 @@ box-sizing: border-box;
 text-align: center;
 margin: 0;
 font-weight: 300;
-/* letter-spacing: 1rem; */
 padding-top: 1rem;
+@media only screen and (max-width:375px) {
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    
+}
 `;
 
 export const HomeText = styled.h3`

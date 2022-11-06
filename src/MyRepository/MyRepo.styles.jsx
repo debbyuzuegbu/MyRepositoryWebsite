@@ -25,11 +25,14 @@ font-weight: bold;
 `;
 
 export const WorksCardContent = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 5rem;
-@media only screen and (max-width:900px){
+margin-top: 1rem;
+display: grid;
+column-gap: 0.1rem;
+row-Gap: 1rem; 
+grid-template-columns: auto auto auto;
+padding: 2rem;
+
+@media only screen and (max-width:375px){
     flex-direction: column;
 }
 `;
@@ -61,6 +64,7 @@ transition: all .5s ease;
     @media only screen and (max-width: 800px){
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
     }
+    
 }
 @media only screen and (max-width:900px){
         width: 50rem;
