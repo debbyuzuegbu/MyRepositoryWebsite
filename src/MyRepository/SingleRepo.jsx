@@ -12,21 +12,28 @@ function SingleRepo() {
       (value) => value.id === Number(id)
     );
     setRepo(getSingleRepo);
+    console.log(getSingleRepo)
   };
   useEffect(() => {
     fetchSingleRepo();
   }, []);
-  return <div>{
+
+  return <div style={{padding: "4rem", height: "100vh"}}>{
     repo && repo.map(
-        (per) => <div key={per.id}>
-            {per.id}
-            <p>{per.svn_url}</p>
-            <p>{per.name}</p>
+        (per) => <div key={per.id} style={{backgroundColor: "#0b0e14", color:"#fff", padding: "5rem"}}>
+            {per.name}
+            <img style={{height: "10rem"}} alt="Debby's face" src={per.owner.avatar_url}/>
+            <p>{per.owner.login}</p>
+            <p>{per.owner.visibility}</p>
+            <p>Stargazers Count: {per.stargazers_count}stargazers</p>
+            <p>Watchers Count: {per.watchers_count}watchers</p>
+            <p> Forks: {per.fork}fork</p>
+            <a href={per.svn_url}>view repo</a>
+
         </div>
     )
     }</div>;
 
-    //you can start styling no pagination
 }
 
 export default SingleRepo;
