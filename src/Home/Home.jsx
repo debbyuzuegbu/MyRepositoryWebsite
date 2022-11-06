@@ -17,7 +17,7 @@ const Home = () =>{
     return(
         <div>
            <HomeContainer>
-                   <HomeContentText>
+                   <HomeContentText style={{padding: "10rem"}}>
                             <HomeTitleText>Github</HomeTitleText>
                             <HomeTitleText>View My Repository</HomeTitleText>
                         <HomeTitleText style={{fontSize: "20px", justifyContent:"center"}}>Find Your repository by adding your github username to the search button below</HomeTitleText>

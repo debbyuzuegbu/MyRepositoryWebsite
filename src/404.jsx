@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function Error() {
   return (
-    <div className="errorpage">
+    <div style={{padding: "5em"}} className="errorpage">
         <img style={{width: "20em", height:"15em"}} src="https://demo.activeitzone.com/ecommerce/public/assets/img/404.svg"/>
         <h2>Page Not Found!</h2>
         <p>Oops! The page you are looking for has not been found on our server.</p>
