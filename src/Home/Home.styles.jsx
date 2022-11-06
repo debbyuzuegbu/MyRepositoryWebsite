@@ -7,7 +7,7 @@ color: #fff;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 74vh;
+height: 100vh;
 @media only screen and (max-width:1600px) {
     height: 85vh;
 }

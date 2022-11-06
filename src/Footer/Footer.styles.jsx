@@ -13,7 +13,6 @@ export const FooterContainer = styled(Container)`
 display: flex;
 flex-direction: column;
 align-items: center;
-/* padding: 5rem 10rem; */
 ${Container}
 `;
 
@@ -22,7 +21,6 @@ display: none;
 `;
 
 export const FooterLinkContainer = styled.div`
-/* margin-top: 5rem; */
 display: flex;
 justify-content: center;
 align-items: center;
