@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div style={{ height: "75vh", padding:"5em" }}>
+    <div style={{ height: "100vh", padding:"5em" }}>
       <h1>Deborah Uzuegbu</h1>
       <p>
         Here's a quick summary about me:

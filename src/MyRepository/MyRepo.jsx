@@ -5,17 +5,11 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import {
-  WorksContainer,
-  WorksContent,
-  WorksTitle,
   WorksCardContent,
   WorksCard,
-  WorksIconContainer,
-  WorksIcon1,
-  WorksIcon2,
-  WorksIcon3,
   WorksCardTitle,
   WorksCardText,
+  Button,
 } from "./MyRepo.styles";
 
 function MyRepo() {
@@ -29,9 +23,6 @@ function MyRepo() {
       const result = await axios(
         "https://api.github.com/users/debbyuzuegbu/repos"
       );
-      // use  the console to see the data you want to display
-      //what next okay error boundary thats okaalyl
-      //create the folder and files okay
       setRepos(result.data);
       setLoading(false);
     } catch (err) {
@@ -65,24 +56,24 @@ function MyRepo() {
                 ))
               )}
           </WorksCardContent>
-       <div>
-       <button
+       <div style={{alignItems: "center", display: "flex", justifyContent: "center", padding:"20px"}}>
+       <Button
           disabled={page <= 1 ? true : null}
           onClick={() => setPage((s) => Number(s) - 1)}
         >
          Prev
-      </button>
+      </Button>
       {Array.from({ length: 6 }, (v, i) => i + 1).map((n) => (
-          <button key={n} onClick={(e) => setPage(e.target.value)} value={n}>
+          <Button key={n} onClick={(e) => setPage(e.target.value)} value={n}>
             {n}
-         </button>
+         </Button>
         ))}
-       <button
+       <Button
           disabled={page >= pages ? true : null}
           onClick={() => setPage((s) => Number(s) + 1)}
         >
         Next
-       </button>
+       </Button>
      </div>
     </div>
   );
