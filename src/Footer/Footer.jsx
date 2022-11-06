@@ -1,12 +1,6 @@
 import {
   FooterSection,
   FooterContainer,
-  FooterNewsletter,
-  FooterNewsletterTitle,
-  FooterNewsletterText,
-  FooterNewsletterForm,
-  FooterNewsletterInput,
-  FooterBtn,
   FooterLinkContainer,
   FooterLinksWrapper,
   FooterLinks,
