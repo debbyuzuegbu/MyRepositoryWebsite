@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const HomeContainer = styled.div`
-background-image: linear-gradient( to top right, rgba(11, 10, 10, 0.38), rgba(11, 10, 10, 0.19));
+background-color:#0b0e14;
+color: #fff;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -35,6 +36,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin: 0 auto;
 @media only screen and (max-width:600px) {
     width: 80%;
 }
@@ -59,16 +61,22 @@ font-size: clamp(1rem, 10vw, 3rem);
 
 export const HomeSubTitle = styled.h2`
 font-size: clamp(2rem, 3vw, 4rem);
+box-sizing: border-box;
+text-align: center;
 margin: 0;
 font-weight: 300;
-letter-spacing: 1rem;
+/* letter-spacing: 1rem; */
 padding-top: 1rem;
 `;
 
 export const HomeText = styled.h3`
 font-size: clamp(1.5rem, 2.0vw, 2rem);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 font-weight: 400;
-padding: 2rem 2rem;
+padding: 1rem 1rem;
 @media only screen and (max-width:375px) {
     padding: 1.5rem 0;
 }

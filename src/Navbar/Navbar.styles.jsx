@@ -89,7 +89,7 @@ list-style: none;
 export const MenuLink = styled(Link)`
 text-decoration: none;
 font-weight: bold;
-font-size: 2rem;
+font-size: 1.5rem;
 color: #fff;
 display: flex;
 justify-content: space-between;

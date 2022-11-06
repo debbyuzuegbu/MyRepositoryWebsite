@@ -19,15 +19,12 @@ const Home = () =>{
            <HomeContainer>
                    <HomeContentText>
                             <HomeTitleText>Github</HomeTitleText>
-                            <HomeTitleText>View My</HomeTitleText>
-                        <HomeSubTitle>Repositories</HomeSubTitle>
-                        <HomeText>
-                          <div>find repositories by adding your github repositories 
-                           username on the search button above. Happy searching..</div>
+                            <HomeTitleText>View My Repository</HomeTitleText>
+                        <HomeSubTitle>Find Your repository by adding your github repositories to the search button</HomeSubTitle>
+                        <HomeText >
                            <HomeBtn to="/repo">
-                           <Button primary big bigFont bigRadius>View My Repository</Button>
+                           <Button  primary big bigFont bigRadius>View My Repository</Button>
                         </HomeBtn>
-                           
                         </HomeText>
                         
                    </HomeContentText>
