@@ -1,11 +1,10 @@
 import React from "react";
 import Searchbar from "./Component/SearchPage";
-import Results from "./Component/Results";
 
 function Page() {
   return (
     <div>
-      <div>Repo Search</div>
+      <div style={{padding: "5rem", fontSize: "30px", fontFamily:"Poppins"}} >Repo Search</div>
       <Searchbar />
     </div>
   );
