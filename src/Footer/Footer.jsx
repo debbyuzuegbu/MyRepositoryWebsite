@@ -18,7 +18,7 @@ function Footer() {
                       <FooterLinksWrapper>
                           <FooterLinks>
                               <FooterLinkTitle>About Us</FooterLinkTitle>
-                              <FooterLink to='/'>About us</FooterLink>
+                              <FooterLink to='/about'>About us</FooterLink>
                               <FooterLink to='/repository'>Search repository</FooterLink>
                           </FooterLinks>
                       </FooterLinksWrapper>
