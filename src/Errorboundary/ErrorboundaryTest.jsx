@@ -6,7 +6,7 @@ function ErrorboundaryTest({personName}) {
     } 
   return (
     <div>
-        <h1>Name: {personName} is a person</h1>
+        <h3>Name: {personName} is a person</h3>
     </div>
   )
 }
