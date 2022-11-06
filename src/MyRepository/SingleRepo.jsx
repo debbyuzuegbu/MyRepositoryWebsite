@@ -15,7 +15,7 @@ function SingleRepo() {
   };
   useEffect(() => {
     fetchSingleRepo();
-  }, []);
+  }, [repos]);
 
   return (
     <div style={{ display: "flex", padding: "4rem", height: "100vh", justifyContent: "center" }}>

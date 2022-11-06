@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import "./App.css";
@@ -11,6 +11,7 @@ import Footer from "./Footer/Footer";
 import Errorbound from "./Errorboundary/Errorboundary";
 import Error from "./404";
 import About from "./About/About";
+import axios from "axios";
 
 export const MyContextApi = React.createContext([]);
 
@@ -27,6 +28,25 @@ function ErrorFallback({ error, resetErrorBoundary }) {
 function App() {
   const [repos, setRepos] = useState([]);
   const [explode, setExplode] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const fetchRepos = async () => {
+    try {
+      setLoading(true);
+      const result = await axios(
+        "https://api.github.com/users/debbyuzuegbu/repos"
+      );
+      setRepos(result.data);
+      console.log(setRepos)
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    fetchRepos();
+    console.log("here")
+  }, []);
+
   return (
     <MyContextApi.Provider value={[repos, setRepos]}>
       <div>
