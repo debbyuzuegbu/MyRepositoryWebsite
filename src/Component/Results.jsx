@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function Results() {
-  return (
-    <ul><li>Repo</li></ul>
-  )
-}
+const Results = (props) => {
+  const { repos } = props;
+  console.log("Results", repos);
+  const listRepos = repos.length ? (
+    repos.map((item) => <li><a href={item.clone_url}>{item.name}</a></li>)
+  ) : (
+    <li>No repos found</li>
+  );
 
-export default Results
+  return ( <div>{listRepos}</div>);
+};
+
+export default Results;

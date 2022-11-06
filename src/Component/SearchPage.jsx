@@ -6,6 +6,7 @@ function Searchbar() {
   const [searchInput, setSearchInput] = useState("");
   const [repos, setRepos] = useState([]);
 
+
   const handleChange = (e) => {
     setSearchInput(e.target.value);
   };
@@ -13,14 +14,14 @@ function Searchbar() {
   const handleClick = async () => {
     console.log(searchInput);
     try {
-      const result = await axios("https://api.github.com/users/debbyuzuegbu/repos");
+      const result = await axios(`https://api.github.com/users/${searchInput}/repos`);
       console.log(result)
-      
+      setRepos(result.data);
     } catch (err) {
       console.log(err);
     }
   };
-  handleClick()
+ 
 
   return (
     <div>
@@ -33,7 +34,7 @@ function Searchbar() {
       ></input>
       <button onClick={handleClick}>Search</button>
     </div>
-    <Results />
+    <Results repos={repos} />
     </div>
   );
 }
