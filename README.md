@@ -1,40 +1,36 @@
-# My Gibhub Repository
+# MyRepositoryWebsite
 
-## Description
-A simple project that shows an overview of my repository and 
-also lets you view your repository. 
-
+## Overview
+A simple project that shows an overview of my repository and also lets you view your repository. This app was created for Altschool Africa's Assignment.It uses github
+[Github's rest Api](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
-
+**LIVE LINK** [My Repo Link](https://my-repository-website.vercel.app/)
 
 ### Visuals
 ![Project Snippet](C:\Users\HP\Desktop\myrepos?raw=true "Snippet")
 
+## Features
+- Cliciking on the view my repositories takes you to an overview of all my repositories 
+- The search button gives you access to find all your repositories, using your repositories username
+- ErrorBoundary button allows you try out an error boundary. 
+- About page gives you an overview about me. 
 
 ### Installation
-Runs the app in the development mode.\
+If you plan to just view my project you can use the link provided near the live link
+If you want to use my code and run locally, download or clone the project locally then >cd >into >the >project then >run >npm >install, host using netlify, vercel or any hosting app
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
+### Dev Dependencies 
+- Prettier
+- React-DOM
+- React
+- EsLint
 
 ## Learn More
-
 You can learn more on youtube.
 
 
 ### Link
-
 https://my-repository-website.vercel.app/
