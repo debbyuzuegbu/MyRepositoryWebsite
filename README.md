@@ -31,6 +31,3 @@ You may also see any lint errors in the console.
 ## Learn More
 You can learn more on youtube.
 
-
-## Link
-https://my-repository-website.vercel.app/
