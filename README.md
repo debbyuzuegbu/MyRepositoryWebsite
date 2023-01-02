@@ -8,7 +8,7 @@ Click the Link below:
 **LIVE LINK** [My Repo Link](https://my-repository-website.vercel.app/)
 
 ## Visuals
-![Project Snippet](C:\Users\HP\Desktop\myrepos?raw=true "Snippet")
+![Landing Page Image](https://assets/Images/landingpage.png)
 
 ## Description
 - Cliciking on the view my repositories takes you to an overview of all my repositories 
