@@ -1,5 +1,6 @@
 # MyRepositoryWebsite
 
+## Description
 A simple project that shows an overview of my repository and also lets you view your repository.It uses github
 [Github's rest Api](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -10,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Visuals
 ![Landing Page Image](https://assets/Images/landingpage.png)
 
-## Description
+## Features
 - Cliciking on the view my repositories takes you to an overview of all my repositories 
 - The search button gives you access to find all your repositories, using your repositories username
 - ErrorBoundary button allows you try out an error boundary. 
