@@ -5,7 +5,7 @@ A simple project that shows an overview of my repository and also lets you view 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Click the Link below:
-**Live Link** [My Repo Link](https://my-repository-website.vercel.app/)
+**Live Link** https://my-repository-website.vercel.app/
 
 ## Visuals
 ![Landing Page Image](https://assets/Images/landingpage.png)
