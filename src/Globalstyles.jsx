@@ -50,19 +50,19 @@ width: 100%;
 `;
 
 export const Button = styled.button`
-border-radius: ${({bigRadius}) => bigRadius ? '30px': '20px'};
-background-color: ${({primary}) => primary? '#43F3E3': '#0b0e14'};
-color: ${({primary}) => primary ? '#0b0e14': '#fff'};
-padding: ${({big}) => big? '18px 20px' : '10px 18px'};
+border-radius: ${({bigRadius}) => bigRadius ? '15px': '12px'};
+background-color: ${({primary}) => primary? '#fff': '#1e242e'};
+color: ${({primary}) => primary ? '#1e242e': '#fff'};
+padding: ${({big}) => big? '14px' : '14px'};
 font-size: ${({bigFont}) => bigFont? '18px': '16px'};
 outline: none;
 cursor: pointer;
 border: none;
 transition: all .5s ease;
 &:hover{
-    background-color: ${({primary}) => primary? '#fff': '#43F3E3'};  
+    background-color: ${({primary}) => primary? '#161a1f': '#fff'};  
     transform: translateY(-.5rem) scale(1.02);
-    color: #0b0e14;
+    color: #fff;
 }
 &:active{
     transform: translateY(.5rem);

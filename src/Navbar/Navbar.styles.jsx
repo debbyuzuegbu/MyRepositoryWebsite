@@ -16,10 +16,19 @@ export const Nav = styled.nav`
 `;
 
 export const Button = styled.button`
-  border-radius: 6px;
+  border-radius: 5px;
+  border: none;
   font-family: 'Montserrat', sans-serif;
   padding: 5px;
   font-size: 12px;
+  &:hover{
+    background-color: #1e242e;  
+    transform: translateX(-.5rem) scale(0.05);
+    color: #fff;
+}
+&:active{
+    transform: translateY(.5rem);
+}
 `;
 
 
