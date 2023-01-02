@@ -4,8 +4,8 @@ A simple project that shows an overview of my repository and also lets you view 
 [Github's rest Api](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Click the Link below:
-**LIVE LINK** [My Repo Link](https://my-repository-website.vercel.app/)
+## Click the Link below:
+**Live Link** [My Repo Link](https://my-repository-website.vercel.app/)
 
 ## Visuals
 ![Landing Page Image](https://assets/Images/landingpage.png)
