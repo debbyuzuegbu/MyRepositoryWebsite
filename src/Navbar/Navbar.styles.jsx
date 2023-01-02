@@ -18,19 +18,10 @@ export const Nav = styled.nav`
 export const Button = styled.button`
   border-radius: 5px;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 5px;
   font-size: 12px;
-  &:hover{
-    background-color: #161e2d;  
-    transform: translateX(-.5rem) scale(0.05);
-    color: #fff;
-}
-&:active{
-    transform: translateY(.5rem);
-}
 `;
-
 
 export const NavbarContainer = styled(Container)`
   display: flex;
