@@ -1,7 +1,7 @@
 import styled, {createGlobalStyle} from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap'); 
 *{
     margin: 0;
     padding: 0;
@@ -18,11 +18,11 @@ html {
     }
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     font-size: 1.6rem;
-    background: #0b0e14;
+    background: #1e242e;
     color: #fff;
 }
 `;
@@ -53,8 +53,8 @@ export const Button = styled.button`
 border-radius: ${({bigRadius}) => bigRadius ? '30px': '20px'};
 background-color: ${({primary}) => primary? '#43F3E3': '#0b0e14'};
 color: ${({primary}) => primary ? '#0b0e14': '#fff'};
-padding: ${({big}) => big? '18px 30px' : '10px 28px'};
-font-size: ${({bigFont}) => bigFont? '20px': '18px'};
+padding: ${({big}) => big? '18px 20px' : '10px 18px'};
+font-size: ${({bigFont}) => bigFont? '18px': '16px'};
 outline: none;
 cursor: pointer;
 border: none;
@@ -102,15 +102,15 @@ background-color: #fefefe;
 }
 @media only screen and (max-width:780px) {
     border: none;
-    color: #43F3E3;
+    color: #fff;
     padding: 1rem 2rem;
     background: none;
     transition: all .4s ease;
     &:hover {
-        border-bottom: 1px solid #43F3E3; 
+        border-bottom: 1px solid #fff; 
         background: none; 
         border-radius: 0;
-        color: #43F3E3;
+        color: #fff;
     }
 }
 `;

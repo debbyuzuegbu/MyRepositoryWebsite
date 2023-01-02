@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-import { Button } from "../MyRepository/MyRepo.styles";
+import {
+  InputButton,
+  Input,
+  Button,
+  SearchText,
+  SearchContent,
+} from "./SearchPage.styles";
 
 function Searchbar() {
   const [searchInput, setSearchInput] = useState("");
@@ -25,18 +31,19 @@ function Searchbar() {
   };
 
   return (
-    <div style={{ padding: "2rem", height: "200vh"}}>
-      <div style={{display: "flex"}}>
-        <input style={{padding: "0.6rem", marginRight: "10px", borderRadius: "10px"}}
+    <SearchContent>
+      <SearchText>Repo Search</SearchText>
+      <InputButton>
+        <Input
           type="text"
-          placeholder="search"
+          placeholder="Search for your github profile here"
           value={searchInput}
           onChange={handleChange}
-        ></input>
-        <Button onClick={handleClick}>Search</Button>
-      </div>
+        />
+          <Button onClick={handleClick}>Search</Button>
+      </InputButton>
       <Results repos={repos} />
-    </div>
+    </SearchContent>
   );
 }
 

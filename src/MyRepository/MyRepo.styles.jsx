@@ -33,7 +33,6 @@ export const MyRepoCard = styled.div`
     margin-right: 5rem;
 
     @media only screen and (max-width: 900px) {
-      //margin-bottom: 10rem;
       margin-right: 0;
     }
     @media only screen and (max-width: 800px) {
@@ -81,14 +80,6 @@ export const Button = styled.button`
   &:active {
     transform: translateY(0.5rem);
   }
-  /* @media only screen and (max-width: 1000px) { */
-    /* width: 100%; */
-    /* padding: ${({ big }) => (big ? "18px 30px" : "10px 20px")}; */
-  /* } */
-  /* @media only screen and (max-width: 375px) {
-    padding: ${({ big }) => (big ? "12px 20px" : "10px 8px")};
-    font-size: ${({ bigFont }) => (bigFont ? "16px" : "18px")};
-  } */
 `;
 
 export const MyRepoCardTitle = styled.h3`

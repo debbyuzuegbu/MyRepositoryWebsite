@@ -3,14 +3,14 @@ import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
-import Home from "./Home/Home";
+import Home from "./Home";
 import SingleRepo from "./MyRepository/SingleRepo";
 import MyRepo from "./MyRepository/MyRepo";
-import Page from "./Page";
+import SearchPage from "./Component/SearchPage";
 import Footer from "./Footer/Footer";
-import Errorbound from "./Errorboundary/Errorboundary";
+import Errorbound from "./Errorboundary";
 import Error from "./404";
-import About from "./About/About";
+import About from "./About";
 import axios from "axios";
 
 export const MyContextApi = React.createContext([]);
@@ -60,7 +60,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/repo" element={<MyRepo />}></Route>
             <Route path="/repo/:id" element={<SingleRepo />}></Route>
-            <Route path="/repository" element={<Page />}></Route>
+            <Route path="/repository" element={<SearchPage />}></Route>
             <Route path="/errorboundary" element={<Errorbound />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="*" element={<Error />}></Route>

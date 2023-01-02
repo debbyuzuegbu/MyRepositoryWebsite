@@ -3,11 +3,9 @@ import { Button } from "../Globalstyles";
 
 import {
   HomeContainer,
-  HomeContent,
   HomeContentText,
-  HomeTitle,
   HomeTitleText,
-  HomeSubTitle,
+  HomeSubTitleText,
   HomeText,
   HomeBtn,
 } from "./Home.styles";
@@ -17,12 +15,11 @@ const Home = () => {
     <div>
       <HomeContainer>
         <HomeContentText>
-          <HomeTitleText>Github</HomeTitleText>
-          <HomeTitleText>View My Repository</HomeTitleText>
-          <HomeTitleText style={{ fontSize: "20px", justifyContent: "center" }}>
+          <HomeTitleText>Github Repository</HomeTitleText>
+          <HomeSubTitleText>
             Find Your repository by adding your github username to the search
             button below
-          </HomeTitleText>
+          </HomeSubTitleText>
           <HomeText>
             <HomeBtn to="/repo">
               <Button primary big bigFont bigRadius>

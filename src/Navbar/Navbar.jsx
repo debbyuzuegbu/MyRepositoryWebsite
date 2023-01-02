@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { BiMenu, BiX } from "react-icons/bi";
-import { Button } from "../Globalstyles";
 import {
   Nav,
   NavbarContainer,
@@ -13,6 +12,7 @@ import {
   MenuLink,
   MenuItemBtn,
   MenuLinkBtn,
+  Button, 
 } from "./Navbar.styles";
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItemBtn>
                 <MenuLinkBtn to="/repository">
-                  <Button primary>Search Now</Button>
+                  <Button>Search Now</Button>
                 </MenuLinkBtn>
               </MenuItemBtn>
             </Menu>

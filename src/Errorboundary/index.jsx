@@ -1,23 +1,32 @@
 import React, {useState} from "react";
 import ErrorboundaryTest from "./ErrorboundaryTest";
+import {
+  ErrorBoundTitle,
+  ErrorBoundLabel,
+  Input
+} from './Errorboundary.styles';
+
 
 function Errorbound() {
     const [personName, setPersonName] = useState("")
   return (
-    <div style={{padding:"5em"}}>
-      <label style={{fontSize: "30px"}}>Welcome:</label>
+    <ErrorBoundTitle>
+      <div className="errorBoundContent">
+      <ErrorBoundLabel>Welcome:</ErrorBoundLabel>
       <p>
-        <input
+        <Input
           onChange={(e) => setPersonName(e.target.value)}
           name="person"
           type="text"
+          placeholder="insert a name"
           value={personName}
-        ></input>
+        />
       </p>
       <p>kindly type Lot to see the effect of the error boundary</p>
       <p>Any other name typed would display below</p>
       <ErrorboundaryTest personName={personName} />
-    </div>
+      </div>
+    </ErrorBoundTitle>
   );
 }
 

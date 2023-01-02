@@ -24,8 +24,8 @@ function SingleRepo() {
           <div
             key={per.id}
             style={{
-              backgroundColor: "#0b0e14",
-              color: "#fff",
+              backgroundColor: "#fff",
+              color:"#0b0e14",
               padding: "5rem",
             }}
           >

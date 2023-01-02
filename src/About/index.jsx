@@ -1,8 +1,12 @@
 import React from "react";
+import {
+  AboutTitle,
+} from './About.styles';
 
 function About() {
   return (
-    <div style={{ height: "100vh", padding:"5em" }}>
+    <AboutTitle>
+      <div className="page">
       <h1>Deborah Uzuegbu</h1>
       <p>
         Here's a quick summary about me:
@@ -28,7 +32,8 @@ function About() {
           <li>😊 Instagram handle: debbie_evv</li>
         </ul>
       </p>
-    </div>
+      </div>
+    </AboutTitle>
   );
 }
 
