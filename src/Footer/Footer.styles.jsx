@@ -18,9 +18,6 @@ export const FooterCopyRight = styled(Link)`
   text-decoration: none;
   outline: none;
   color: #fff;
-  &:hover {
-    color: #43f3e3;
-  }
   @media only screen and (max-width: 1000px) {
     font-size: 8px;
   }

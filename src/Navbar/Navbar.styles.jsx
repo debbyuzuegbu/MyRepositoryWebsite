@@ -22,7 +22,7 @@ export const Button = styled.button`
   padding: 5px;
   font-size: 12px;
   &:hover{
-    background-color: #1e242e;  
+    background-color: #161e2d;  
     transform: translateX(-.5rem) scale(0.05);
     color: #fff;
 }
