@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 **Live Link** https://my-repository-website.vercel.app/
 
 ## Visuals
-![Landing Page Image](https://assets/Images/landingpage.png)
+![Landing Page Image]([https:\\public\Images\searchpage.png)
 
 ## Features
 - Cliciking on the view my repositories takes you to an overview of all my repositories 
