@@ -8,9 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Click the Link below:
 **Live Link** https://my-repository-website.vercel.app/
 
-## Visuals
-![Landing Page Image]([https:\\public\Images\searchpage.png)
-
 ## Features
 - Cliciking on the view my repositories takes you to an overview of all my repositories 
 - The search button gives you access to find all your repositories, using your repositories username
