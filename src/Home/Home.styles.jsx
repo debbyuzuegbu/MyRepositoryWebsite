@@ -13,7 +13,7 @@ export const HomeContainer = styled.div`
 `;
 
 export const HomeContent = styled.section`
-  /* height: 100%; */
+  /* height: 90%; */
   /* width: 100%; */
   position: relative;
   display: flex;
@@ -24,7 +24,7 @@ export const HomeContent = styled.section`
   color: #fffefe;
   @media only screen and (max-width: 375px) {
     text-align: start;
-    /* height: 80%; */
+    height: 100%;
   }
 `;
 
