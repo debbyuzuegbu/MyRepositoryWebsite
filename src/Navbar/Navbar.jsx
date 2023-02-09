@@ -43,11 +43,11 @@ const Navbar = () => {
                   About
                 </MenuLink>
               </MenuItem>
-              <MenuItem>
+              {/* <MenuItem>
                 <MenuLink onClick={closeMenu} to="/errorboundary">
                   Error Boundary
                 </MenuLink>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItemBtn>
                 <MenuLinkBtn to="/repository">
                   <Button>Search Now</Button>

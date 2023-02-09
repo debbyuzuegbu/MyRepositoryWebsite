@@ -61,7 +61,7 @@ function App() {
             <Route path="/repo" element={<MyRepo />}></Route>
             <Route path="/repo/:id" element={<SingleRepo />}></Route>
             <Route path="/repository" element={<SearchPage />}></Route>
-            <Route path="/errorboundary" element={<Errorbound />}></Route>
+            {/* <Route path="/errorboundary" element={<Errorbound />}></Route> */}
             <Route path="/about" element={<About />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Routes>
