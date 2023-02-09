@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutTitle = styled.div`
-  height: 80vh;
+  height: 92vh;
   background-color: #1e242e;
   color: #fff;
   .page {

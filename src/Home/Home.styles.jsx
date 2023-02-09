@@ -8,13 +8,13 @@ export const HomeContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   @media only screen and (max-width: 1600px) {
-    height: 80vh;
+    height: 100vh;
   }
 `;
 
 export const HomeContent = styled.section`
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ export const HomeContent = styled.section`
   color: #fffefe;
   @media only screen and (max-width: 375px) {
     text-align: start;
-    height: 80%;
+    /* height: 80%; */
   }
 `;
 
